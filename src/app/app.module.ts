@@ -1,8 +1,13 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {RouteReuseStrategy} from "@angular/router";
+import {IonicModule, IonicRouteStrategy} from "@ionic/angular";
+import {HttpClientModule} from "@angular/common/http";
+import {CoreService} from "./core/services/core.service";
+import {ToastService} from "./core/services/toast.service";
 
 @NgModule({
   declarations: [
@@ -10,9 +15,15 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
+    IonicModule.forRoot(),
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    {provide: RouteReuseStrategy, useClass: IonicRouteStrategy},
+    CoreService, ToastService
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}

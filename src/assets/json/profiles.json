@@ -1,0 +1,67 @@
+[
+  {
+    "id": "M9837832",
+    "name": "Priyanka",
+    "age": "27 Yrs",
+    "height": "5 ft 2 in",
+    "language": "Tamil",
+    "caste": "Nair",
+    "work": "MBBS, MS, Doctor",
+    "location": "Cuddalore",
+    "state": "TamilNadu",
+    "nationality": "India.",
+    "image": "./assets/images/Priyanka.jpg"
+  },
+  {
+    "id": "M9837833",
+    "name": "Pooja",
+    "age": "26 Yrs",
+    "height": "5 ft 7 in",
+    "language": "Tamil",
+    "caste": "Nair",
+    "work": "MBBS, MS, Doctor",
+    "location": "Cuddalore",
+    "state": "TamilNadu",
+    "nationality": "India.",
+    "image": "./assets/images/Tamanna.jpg"
+  },
+  {
+    "id": "M9837834",
+    "name": "Anupama",
+    "age": "24 Yrs",
+    "height": "5 ft 5 in",
+    "language": "Tamil",
+    "caste": "Nair",
+    "work": "MBBS, MS, Doctor",
+    "location": "Cuddalore",
+    "state": "TamilNadu",
+    "nationality": "India.",
+    "image": "./assets/images/Anupama.webp"
+  },
+  {
+    "id": "M9837835",
+    "name": "Nazriya",
+    "age": "25 Yrs",
+    "height": "5 ft 6 in",
+    "language": "Tamil",
+    "caste": "Nair",
+    "work": "MBBS, MS, Doctor",
+    "location": "Cuddalore",
+    "state": "TamilNadu",
+    "nationality": "India.",
+    "image": "./assets/images/Nazriya.jpg"
+  },
+  {
+    "id": "M9837836",
+    "name": "Anushka",
+    "age": "26 Yrs",
+    "height": "5 ft 7 in",
+    "language": "Tamil",
+    "caste": "Nair",
+    "work": "MBBS, MS, Doctor",
+    "location": "Cuddalore",
+    "state": "TamilNadu",
+    "nationality": "India.",
+    "image": "./assets/images/Anushka.avif"
+  }
+]

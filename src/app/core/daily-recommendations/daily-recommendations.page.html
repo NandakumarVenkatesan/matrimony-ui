@@ -1,0 +1,53 @@
+<ion-header class="ion-no-border" [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="backButtonClick()">
+      <ion-title>Daily Recommendations</ion-title>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-row class="gradientBackground"></ion-row>
+  <ion-grid *ngIf="profiles">
+    <ion-row class="ion-justify-content-center profileCard">
+      <ion-col size="12">
+        <ion-card *ngFor="let profile of profiles">
+          <ion-card-content class="ion-no-padding">
+            <ion-card-header class="headerImage ion-no-padding"
+                             [style.background-image]="'url('+ profile.image +')'"></ion-card-header>
+            <div class="cardData">
+              <p class="header">{{ profile.name }}</p>
+              <p class="profile">{{ profile.age }}, {{ profile.height }}, {{ profile.language }},
+                {{ profile.caste }}, {{ profile.work }}, </p>
+              <p class="profile">{{ profile.location }}, {{ profile.state }}</p>
+              <p class="profile">{{ profile.nationality }}</p>
+              <ion-text class="line"></ion-text>
+              <ion-row class="footer ion-align-items-center">
+                <ion-col size="4">
+                  <ion-button class="small shortListed" color="light" size="small" shape="round">
+                    <ion-text>Shortlisted</ion-text>
+                  </ion-button>
+                </ion-col>
+                <ion-col size="8">
+                  <ion-row class="ion-align-items-center">
+                    <ion-col class="ion-text-right">
+                      <ion-text class="likeText">Like Her?</ion-text>
+                      <ion-button class="cancel profileStatusFalse" color="light" size="small" shape="round"
+                                  (click)="profileStatus(false)">
+                        No
+                      </ion-button>
+                      <ion-button class="ok profileStatusTrue" color="tertiary" size="small" shape="round"
+                                  (click)="profileStatus(true)">
+                        Yes
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+              </ion-row>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
